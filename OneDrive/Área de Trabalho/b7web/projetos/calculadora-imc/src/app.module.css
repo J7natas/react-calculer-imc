@@ -1,0 +1,156 @@
+.main {
+    padding-bottom: 50px;
+}
+
+.contHeader {
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.Container {
+    display: flex;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.contLeft {
+    flex: 1;
+    margin-right: 40px;
+}
+
+.contLeft h1 {
+    color: rgb(134, 173, 184);
+    font-size:40px;
+}
+
+.contLeft p {
+    margin-top: 20px;
+    color: #333;
+}
+
+.contLeft input {
+    width: 100%;
+    padding: 10px 0;
+    border: 0;
+    border-bottom: 2px solid #999;
+    margin-top: 30px;
+    outline: none;
+    font-size: 16px;
+}
+
+.contLeft input:disabled{
+    opacity: .5;
+}
+
+.contLeft button {
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 40px;
+    color: white;
+    background-color: rgb(82, 117, 127);
+    font-size: 20px;
+    border: none;
+    transition: all ease-in-out .3s;
+}
+
+.contLeft button:hover {
+    background-color: rgb(114, 209, 235);
+    cursor: pointer;
+}
+
+.contLeft button:disabled {
+    background-color: rgba(82, 117, 127, 0.297);
+    cursor: auto;
+}
+
+.contRight {
+    flex: 1;
+    margin-left: 40px;
+    display: flex;
+}
+
+.contRight .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    flex: 1;
+}
+
+.showBig {
+    display: flex;
+    flex: 1;
+}
+
+.arrow {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: rgba(5, 95, 123, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: -33px;
+    margin-top: 145px;
+    cursor: pointer;
+    transition: all ease-in-out .8;
+}
+
+.arrow img {
+    width: 40px;
+    height: 40px;
+}
+
+.arrow:hover {
+    background-color: rgba(19, 161, 204, 0.72);
+
+}
+
+@media (max-width:910px) {
+    .contHeader {
+        padding-left: 25px;
+    }
+
+    .Container {
+        padding: 0 25px;
+    }
+}
+
+@media (max-width:740px) {
+    .Container {
+        flex-direction: column;
+    }
+
+    .contRight {
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+    .contLeft {
+        margin-right: 0px;
+    }
+
+    .showBig {
+      height: 200px;
+    }
+
+    .arrow {
+        margin-top: 0;
+        margin-left: 0;
+        border-radius: 0;
+        border-bottom-right-radius: 20px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .arrow img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 430px) {
+    .contRight .grid {
+       grid-template-columns: 1fr;
+    }
+}
