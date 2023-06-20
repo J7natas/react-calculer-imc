@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="./css/style.css"  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+  <body>
+
+    <div  id="Banner-Active">
+      <div>
+        <img id="close" onclick="handlerClose()" src="./images/icon-close.svg" />
+        <div class="contImages" id="banner-extend">
+          <img id="bg1" src="./images/image-product-1.jpg" />
+          <img src="./images/image-product-2.jpg" />
+          <img src="./images/image-product-3.jpg" />
+          <img src="./images/image-product-4.jpg" />
+        </div>
+        <div id="area-images">
+          <img id="extend1" onclick="addBorder()" src="./images/image-product-1-thumbnail.jpg" alt="">
+          <img id="extend2" onclick="addBorder1()" src="./images/image-product-2-thumbnail.jpg" alt="">
+          <img id="extend3" onclick="addBorder2()" src="./images/image-product-3-thumbnail.jpg" alt="">
+          <img id="extend4" onclick="addBorder3()" src="./images/image-product-4-thumbnail.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <header>
+        <div class="cont-caracter">
+          <img src="./images/logo.svg" />
+          <p>Collection</p>
+          <p>Main</p>
+          <p>Woman</p>
+          <p>About</p>
+          <p>Contact</p>
+        </div>
+        <div class="Cont-user">
+          <div id="card">
+            <p id="icon-Card"></p>
+            <img src="./images/icon-cart.svg" />
+            <div id="efect"> 
+                <h1>Cart</h1>
+                <p id="element">Your cart is empty</p>
+            </div>
+          </div>
+          <div class="User">
+            <img src="./images/image-avatar.png" />
+          </div>
+        </div>
+      </header>
+    </div>
+    
+
+    <div class="container">
+      <main>
+        <div class="cont-banner">
+          <div class="banne">
+            <img onclick="expandBaner()"  src="./images/image-product-1.jpg" />
+          </div>
+          <div class="product-images">
+            <img id="ActiveImge" onclick="addBorder()" src="./images/image-product-1-thumbnail.jpg" alt="">
+            <img class="img-1" onclick="addBorder1()" src="./images/image-product-2-thumbnail.jpg" alt="">
+            <img onclick="addBorder2()" class="img-2" src="./images/image-product-3-thumbnail.jpg" alt="">
+            <img onclick="addBorder3()" class="img-3" src="./images/image-product-4-thumbnail.jpg" alt="">
+          </div>
+        </div>
+        <div class="info">
+          <div class="area-text">
+            <p class="text-orange">sneaker company</p>
+            <h1>
+              Fall Limited Edition Sneakers
+            </h1>
+           <p class="text-gray">These low-profile snekers are your perfect casual wear companion. Featuring a durabler
+              rubber outer sole, they'll whitstand everything the weather can offer </p>
+          </div>
+          <div class="area-valor">
+            <h1>$125.00<span>50%</span></h1>
+            <p>$250.00</p>
+          </div>
+          <div class="Add-card">
+  
+            <div class="count">
+              <img onclick="Diminuir()" src="./images/icon-minus.svg" />
+              <p id="text">0</p>
+              <img onclick="AddCount()" src="./images/icon-plus.svg" />
+            </div>
+            
+            <div onclick="handlerButton()" id="Button">
+              <img src="./images/icon-cardWhite.svg" />
+              <p>Add to card</p>
+            </div>
+  
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
